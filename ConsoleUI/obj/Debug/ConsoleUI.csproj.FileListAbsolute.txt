@@ -1,0 +1,9 @@
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\bin\Debug\OrderProcessingLibrary.dll
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\bin\Debug\OrderProcessingLibrary.pdb
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.pdb

@@ -1,0 +1,7 @@
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\bin\Debug\netstandard2.0\OrderProcessingLibrary.deps.json
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\bin\Debug\netstandard2.0\OrderProcessingLibrary.dll
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\bin\Debug\netstandard2.0\OrderProcessingLibrary.pdb
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\obj\Debug\netstandard2.0\OrderProcessingLibrary.AssemblyInfoInputs.cache
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\obj\Debug\netstandard2.0\OrderProcessingLibrary.AssemblyInfo.cs
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\obj\Debug\netstandard2.0\OrderProcessingLibrary.dll
+C:\Users\skvid\source\repos\Maersk_Test\OrderProcessingLibrary\obj\Debug\netstandard2.0\OrderProcessingLibrary.pdb
