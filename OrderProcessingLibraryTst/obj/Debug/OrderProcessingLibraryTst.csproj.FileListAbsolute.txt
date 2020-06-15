@@ -1,0 +1,4 @@
+C:\Maersk_Test\OrderProcessingLibraryTst\bin\Debug\OrderProcessingLibraryTst.dll
+C:\Maersk_Test\OrderProcessingLibraryTst\bin\Debug\OrderProcessingLibraryTst.pdb
+C:\Maersk_Test\OrderProcessingLibraryTst\obj\Debug\OrderProcessingLibraryTst.dll
+C:\Maersk_Test\OrderProcessingLibraryTst\obj\Debug\OrderProcessingLibraryTst.pdb

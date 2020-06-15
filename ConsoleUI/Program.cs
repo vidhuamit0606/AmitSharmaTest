@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections.Generic;
-using OrderProcessingLibrary;
+using OrderProcessingLibrarytst;
 
 namespace ConsoleUI
 {
@@ -20,26 +20,75 @@ namespace ConsoleUI
 
             foreach (IProductModel prod in cart)
             {
-                prod.SlipSlipforShipping(customer);
+                try
+                {
+                    prod.SlipSlipforShipping(customer);
+                }
+                catch (Exception ex)
+                {
+                    //// Do some logging
+                    throw new Exception("faced some exception", ex);
+                }
+                finally
+                {
+                    //assuming if any database side connection is used in flow
+                    Console.WriteLine("Close Database Connection");
+                }
 
                 if ((prod is IBookProductModel book && book.paymentcode.Value != string.Empty))
                 {
 
-                    book.packingSlipforRoyaltyDept(royalty);
-                    book.generateCommisionforAgent(agent);
+                    try
+                    {
+                        book.packingSlipforRoyaltyDept(royalty);
+                        book.generateCommisionforAgent(agent);
+                    }
+                    catch (Exception ex)
+                    {
+
+                        //// Do some logging
+                        throw new Exception("faced some exception", ex);
+                    }
                 }
 
-                prod.generateCommisionforAgent(agent);
+                try
+                {
+                    prod.generateCommisionforAgent(agent);
+                }
+                catch (Exception ex)
+                {
+
+                    //// Do some logging
+                    throw new Exception("faced some exception", ex);
+                }
             }
             foreach (IMembershipModel member in membershipcart)
             {
                 if(member is IMembershipModel mem &&  mem.membershipStatus == "ativated")
                 {
-                    mem.Activate(customer);
+                    try
+                    {
+                        mem.Activate(customer);
+                    }
+                    catch (Exception ex)
+                    {
+
+                        //// Do some logging
+                        throw new Exception("faced some exception", ex);
+                    }
                 }
                 if(member is IMembershipModel memchk && memchk.membershipStatus == "renewed")
                 {
-                    memchk.Renew(customer);
+                    try
+                    {
+                        memchk.Renew(customer);
+                    }
+                    catch (Exception ex)
+                    {
+
+                        //// Do some logging
+                        throw new Exception("faced some exception", ex);
+                    }
                 }
             }
         }
@@ -83,8 +132,19 @@ namespace ConsoleUI
         private static List<IMembershipModel> AddmemberSampleData()
         {
             List<IMembershipModel> outputtwo = new List<IMembershipModel>();
-            outputtwo.Add(new MembershipModel("Monthly", "2"));
-            outputtwo.Add(new MembershipModel("Renew", "2"));
+            try
+            {
+                
+                outputtwo.Add(new MembershipModel("Monthly", "2"));
+                outputtwo.Add(new MembershipModel("Renew", "2"));
+
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+               // throw new Exception("faced exception..chk!!",ex);
+            }
 
             return outputtwo;
         }
@@ -94,14 +154,23 @@ namespace ConsoleUI
         {
             List<IProductModel> output = new List<IProductModel>();
 
-            output.Add(new BookProductModel(".NET Core Start to Finish", "1"));
-           
+            try
+            {
+                output.Add(new BookProductModel(".NET Core Start to Finish", "1"));
 
-            output.Add(new PhysicalProductModel { Title = "Hard Drive",paymentcode = new PaymentCode("1")});
-            //output.Add(new BookProductModel { Title = ".NET Core Start to Finish", paymentcode = new PaymentCode ("1"),royaltymodel= });
-            output.Add(new PhysicalProductModel { Title = "IAmAmithSK T-Shirt", paymentcode = new PaymentCode("1")});
-            output.Add(new PhysicalProductModel { Title = "Cosco Football" ,paymentcode = new PaymentCode("1") });
 
+                output.Add(new PhysicalProductModel { Title = "Hard Drive", paymentcode = new PaymentCode("1") });
+                //output.Add(new BookProductModel { Title = ".NET Core Start to Finish", paymentcode = new PaymentCode ("1"),royaltymodel= });
+                output.Add(new PhysicalProductModel { Title = "IAmAmithSK T-Shirt", paymentcode = new PaymentCode("1") });
+                output.Add(new PhysicalProductModel { Title = "Cosco Football", paymentcode = new PaymentCode("1") });
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                //throw new Exception("faced exception..chk!!",ex);
+            }
             //var dict = output.ToDictionary(x =>x.)
 
             return output;

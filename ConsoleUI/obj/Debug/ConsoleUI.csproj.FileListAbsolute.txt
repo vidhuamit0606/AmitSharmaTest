@@ -7,3 +7,12 @@ C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csprojAsse
 C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
 C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\skvid\source\repos\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Maersk_Test\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Maersk_Test\ConsoleUI\bin\Debug\OrderProcessingLibraryTst.dll
+C:\Maersk_Test\ConsoleUI\bin\Debug\OrderProcessingLibraryTst.pdb
+C:\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
+C:\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Maersk_Test\ConsoleUI\obj\Debug\ConsoleUI.pdb
