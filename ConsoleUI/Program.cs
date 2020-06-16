@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Collections.Generic;
 using OrderProcessingLibrarytst;
 
 namespace ConsoleUI
@@ -27,7 +25,9 @@ namespace ConsoleUI
                 catch (Exception ex)
                 {
                     //// Do some logging
-                    throw new Exception("faced some exception", ex);
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                    //throw new Exception("faced some exception", ex);
                 }
                 finally
                 {
@@ -47,7 +47,9 @@ namespace ConsoleUI
                     {
 
                         //// Do some logging
-                        throw new Exception("faced some exception", ex);
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.StackTrace);
+                        //throw new Exception("faced some exception", ex);
                     }
                 }
 
@@ -59,7 +61,7 @@ namespace ConsoleUI
                 {
 
                     //// Do some logging
-                    throw new Exception("faced some exception", ex);
+                    //throw new Exception("faced some exception", ex);
                 }
             }
             foreach (IMembershipModel member in membershipcart)
@@ -74,7 +76,9 @@ namespace ConsoleUI
                     {
 
                         //// Do some logging
-                        throw new Exception("faced some exception", ex);
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.StackTrace);
+                        //throw new Exception("faced some exception", ex);
                     }
                 }
                 if(member is IMembershipModel memchk && memchk.membershipStatus == "renewed")
@@ -87,7 +91,9 @@ namespace ConsoleUI
                     {
 
                         //// Do some logging
-                        throw new Exception("faced some exception", ex);
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.StackTrace);
+                        //throw new Exception("faced some exception", ex);
                     }
                 }
             }
