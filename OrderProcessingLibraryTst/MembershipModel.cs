@@ -14,9 +14,9 @@ namespace OrderProcessingLibrarytst
 
         public PaymentCode paymentcode { get; set; }
 
-        public MembershipModel(string membershiptype, string paymentcode)
+        public MembershipModel(string membershipstatus, string paymentcode)
         {
-            this.Membershiptype = membershiptype;
+            this.membershipStatus = membershipstatus;
             this.paymentcode = new PaymentCode(paymentcode);
         }
 
@@ -24,7 +24,7 @@ namespace OrderProcessingLibrarytst
         {
             if (paymentcode.Value != string.Empty)
             {
-                Console.WriteLine($"Simulating Emailing the { membershipStatus }  to { customer.FirstName } in { customer.City }");
+                Console.WriteLine($"Simulating Emailing the { membershipStatus } member to { customer.FirstName } in { customer.City }");
                
             }
 
@@ -34,7 +34,7 @@ namespace OrderProcessingLibrarytst
         {
             if (paymentcode.Value != string.Empty)
             {
-                Console.WriteLine($"Simulating Emailing the { membershipStatus }  to { customer.FirstName } in { customer.City }");
+                Console.WriteLine($"Simulating Emailing the { membershipStatus }  member to { customer.FirstName } in { customer.City }");
 
             }
 

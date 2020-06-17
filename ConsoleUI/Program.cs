@@ -141,8 +141,8 @@ namespace ConsoleUI
             try
             {
                 
-                outputtwo.Add(new MembershipModel("Monthly", "2"));
-                outputtwo.Add(new MembershipModel("Renew", "2"));
+                outputtwo.Add(new MembershipModel("ativated", "2"));
+                outputtwo.Add(new MembershipModel("renewed", "2"));
 
             }
             catch (Exception ex) 
